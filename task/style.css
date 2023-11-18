@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 80vw;
+    height: 80vh;
+    align-self: center;
+   
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    padding:0 4vw;
+}
+.logo a{
+    color: black;
+    font-size: x-large;
+    
+    font-family:'Times New Roman', Times, serif;
+}
+.nav-links{
+    display: flex;
+    gap: 4vw;
+    cursor: pointer;
+    padding-right: 4vw;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    color: black;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+/* Nav End  */
+
+.container{
+   margin: 2vh auto;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    border-bottom: 1px solid black;
+}
+.header img{
+    width: 90%;
+    height: auto;
+}
+.header p{
+    font-size: large;
+    margin-bottom: 20px;
+    width: 85%;
+}
+.header h1{
+    width: 85%;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.heading{
+    margin: 2vh auto;
+}
+.gallery {
+    margin: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.gallery div {
+    flex: 0 0 calc(48% - 2vh);
+    margin:8px;
+    padding: 3vh;
+}
+
+.gallery img {
+    width: 90%;
+    height: 90%;
+}
+/* Footer Start */
+
+footer{
+    display: flex;
+    padding: 2vw;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    gap: 3vw;
+    color: white;
+}
+.hero-line{
+    text-align: center;
+}
+footer p{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer span{
+    font-size: small;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.intro{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.links a{
+    color: white;
+    text-decoration: underline;
+    padding: 0 2vh;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .nav-links{
+        display: none;
+    }
+    ul{
+        background-image: url('./img/menu.png');
+    }
+    section{
+        position: relative;
+        width: 100%;
+        padding: 4vw;
+    }
+    .gallery{
+       width: 95vw;
+    }
+    .gallery div {
+        flex: 0 0 calc(90% - 20px); /* Two images per row with margin */
+        margin: 4vw;
+        width: auto;
+    }
+    footer{
+        flex: 0 0 calc(70% - 20px);
+    }
+}
